@@ -8,6 +8,7 @@ import {
   Linkedin,
   Mail,
   MapPin,
+  Phone,
   Sparkles,
   TrendingUp,
   ArrowLeft,
@@ -72,11 +73,15 @@ export default function ResumePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
-                  <a href={`mailto:${'juanmacorrea1602@gmail.com'}`} className="hover:underline">{'juanmacorrea1602@gmail.com'}</a>
+                  <a href={`mailto:${resumeData.contact.email}`} className="hover:underline">{resumeData.contact.email}</a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Phone className="h-4 w-4" />
+                  <a href={`https://wa.me/${resumeData.contact.phone.replace('+', '')}`} target="_blank" rel="noopener noreferrer" className="hover:underline">{resumeData.contact.phone}</a>
                 </div>
                 <div className="flex items-center gap-2">
                   <Linkedin className="h-4 w-4" />
-                  <a href={`https://${'linkedin.com/in/juanmcorrea-example'}`} target="_blank" rel="noopener noreferrer" className="hover:underline">{'linkedin.com/in/juanmcorrea-example'}</a>
+                  <a href={`https://${resumeData.contact.linkedin}`} target="_blank" rel="noopener noreferrer" className="hover:underline">{resumeData.contact.linkedin}</a>
                 </div>
               </div>
             </div>

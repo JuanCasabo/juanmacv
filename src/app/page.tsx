@@ -15,6 +15,7 @@ import {
   Linkedin,
   Mail,
   MapPin,
+  Phone,
   Sparkles,
   TrendingUp,
 } from 'lucide-react';
@@ -40,6 +41,15 @@ export default function Home() {
             className="text-muted-foreground hover:text-primary transition-colors"
           >
             <Mail className="h-5 w-5" />
+          </a>
+          <a
+            href={`https://wa.me/${resumeData.contact.phone.replace('+', '')}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            <Phone className="h-5 w-5" />
           </a>
           <a
             href={`https://${resumeData.contact.linkedin}`}

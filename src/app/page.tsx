@@ -76,7 +76,7 @@ export default function Home() {
               <Phone className="h-6 w-6" />
             </a>
             <a
-              href={`https://www.${resumeData.contact.linkedin}`}
+              href={`https://${resumeData.contact.linkedin}`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"

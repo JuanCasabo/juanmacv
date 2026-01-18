@@ -1,7 +1,8 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { Printer } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
 
 export function PrintButton() {
   const handlePrint = () => {
@@ -9,9 +10,15 @@ export function PrintButton() {
   };
 
   return (
-    <Button onClick={handlePrint} className="bg-accent text-accent-foreground hover:bg-accent/90">
+    <button
+      onClick={handlePrint}
+      className={cn(
+        buttonVariants({ variant: "default" }),
+        "bg-accent text-accent-foreground hover:bg-accent/90"
+      )}
+    >
       <Printer className="mr-2 h-5 w-5" />
       Imprimir o Guardar
-    </Button>
+    </button>
   );
 }

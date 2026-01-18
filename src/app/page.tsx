@@ -22,7 +22,6 @@ import {
   TrendingUp,
 } from 'lucide-react';
 import { resumeData } from '@/lib/data';
-import { ContactForm } from '@/components/contact-form';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
 import { CurrentYear } from '@/components/current-year';
@@ -40,14 +39,14 @@ export default function Home() {
 
       <main className="flex-grow container mx-auto px-4 py-8">
         <section id="hero" className="text-center py-16">
-          <div className="w-40 h-40 rounded-full mx-auto mb-6 overflow-hidden border-4 border-primary/20 shadow-lg">
+          <div className="w-48 h-48 rounded-full mx-auto mb-6 overflow-hidden border-4 border-primary/20 shadow-lg">
             <Image
               src={
                 profileImage?.imageUrl || '/profile.jpg'
               }
               alt={resumeData.name}
-              width={160}
-              height={160}
+              width={192}
+              height={192}
               className="object-cover h-full w-full scale-150"
               data-ai-hint={profileImage?.imageHint}
               priority
@@ -192,11 +191,29 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        <section id="contact" className="py-16">
-          <ContactForm />
-        </section>
       </main>
+
+      <a
+        href={`https://wa.me/${resumeData.contact.phone.replace('+', '')}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp"
+        className="fixed bottom-8 right-8 z-50 group"
+      >
+        <div
+          className="flex items-center justify-center w-16 h-16 bg-green-500 rounded-full shadow-lg group-hover:bg-green-600 transition-colors"
+        >
+          <svg
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-8 w-8 text-white fill-current"
+          >
+            <title>WhatsApp</title>
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.76-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.37-.025-.52-.075-.149-.669-1.611-.916-2.206-.242-.595-.487-.5-.669-.51-.18-.01-.37-.01-.57-.01s-.52.075-.792.372c-.27.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 5.451 0 9.885 4.434 9.889 9.884.002 5.452-4.433 9.886-9.889 9.886z" />
+          </svg>
+        </div>
+      </a>
 
       <footer className="container mx-auto px-4 py-6 text-center text-muted-foreground">
         <p>

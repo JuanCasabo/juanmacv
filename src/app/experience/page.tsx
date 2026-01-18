@@ -62,20 +62,33 @@ export default function ExperiencePage() {
             </h3>
             <Accordion type="single" collapsible className="w-full">
               {resumeData.experience.map((job, index) => (
-                <AccordionItem value={`item-${index}`} key={index}>
-                  <AccordionTrigger className="hover:no-underline text-left py-6">
-                    <div className="flex w-full items-start justify-between pr-4">
-                      <div className="flex-1">
-                        <h4 className="font-headline text-xl">{job.role}</h4>
-                        <p className="text-muted-foreground mt-1">{job.company}</p>
-                         <Badge variant="secondary" className="mt-2 sm:hidden">{job.period}</Badge>
+                <AccordionItem
+                  value={`item-${index}`}
+                  key={index}
+                  className="mb-4 last:mb-0 rounded-lg border bg-card shadow-sm transition-all hover:shadow-md data-[state=open]:shadow-lg"
+                >
+                  <AccordionTrigger className="w-full p-6 text-left hover:no-underline rounded-lg hover:bg-secondary/20 data-[state=open]:rounded-b-none data-[state=open]:bg-secondary/20">
+                    <div className="flex w-full items-start justify-between">
+                      <div className="flex-1 pr-4">
+                        <h4 className="font-headline text-xl text-primary">{job.role}</h4>
+                        <p className="mt-1 font-medium text-muted-foreground">{job.company}</p>
+                        <Badge variant="secondary" className="mt-2 sm:hidden">
+                          {job.period}
+                        </Badge>
                       </div>
-                      <Badge variant="secondary" className="hidden sm:inline-flex ml-4 shrink-0">{job.period}</Badge>
+                      <Badge
+                        variant="outline"
+                        className="hidden shrink-0 border-accent/50 bg-accent/10 text-accent sm:inline-flex ml-4"
+                      >
+                        {job.period}
+                      </Badge>
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="py-4 border-t">
-                      <p className="whitespace-pre-wrap text-muted-foreground">{job.description}</p>
+                    <div className="px-6 pb-6 bg-card rounded-b-lg">
+                      <div className="border-t border-border/50 pt-6">
+                        <p className="whitespace-pre-wrap text-muted-foreground">{job.description}</p>
+                      </div>
                     </div>
                   </AccordionContent>
                 </AccordionItem>

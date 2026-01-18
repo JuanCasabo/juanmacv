@@ -31,30 +31,6 @@ export default function ResumePage() {
 
   return (
     <div className="bg-background print:bg-white">
-      {/* Print-specific styles */}
-      <style jsx global>{`
-        @media print {
-          @page {
-            size: A4;
-            margin: 1.5cm;
-          }
-          body {
-            -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
-          }
-          .no-print {
-            display: none !important;
-          }
-          .printable-area {
-            font-size: 10pt;
-          }
-          a {
-            text-decoration: none;
-            color: inherit;
-          }
-        }
-      `}</style>
-
       <header className="container mx-auto px-4 py-6 flex justify-between items-center sticky top-0 z-30 bg-background/80 backdrop-blur-sm no-print">
         <Button asChild variant="ghost">
           <Link href="/" className="flex items-center gap-2">

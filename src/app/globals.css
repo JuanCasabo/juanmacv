@@ -86,3 +86,24 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 1.5cm;
+  }
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .printable-area {
+    font-size: 10pt;
+  }
+  .printable-area a {
+    text-decoration: none;
+    color: inherit;
+  }
+}

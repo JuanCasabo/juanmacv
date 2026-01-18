@@ -40,15 +40,15 @@ export default function Home() {
 
       <main className="flex-grow container mx-auto px-4 py-8">
         <section id="hero" className="text-center py-16">
-          <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-4 border-primary/20 shadow-lg">
+          <div className="w-40 h-40 rounded-full mx-auto mb-6 overflow-hidden border-4 border-primary/20 shadow-lg">
             <Image
               src={
-                profileImage?.imageUrl || 'https://picsum.photos/seed/1/200/200'
+                profileImage?.imageUrl || '/profile.jpg'
               }
               alt={resumeData.name}
-              width={128}
-              height={128}
-              className="object-cover h-full w-full scale-125"
+              width={160}
+              height={160}
+              className="object-cover h-full w-full scale-150"
               data-ai-hint={profileImage?.imageHint}
               priority
             />

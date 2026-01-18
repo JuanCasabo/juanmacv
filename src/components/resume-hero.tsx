@@ -1,26 +1,19 @@
-'use client';
 
 import Image from 'next/image';
 import { Linkedin, Mail, MapPin, Phone } from 'lucide-react';
-import { resumeData } from '@/lib/data';
+import type { resumeData as ResumeDataType } from '@/lib/data';
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 
 type ResumeHeroProps = {
-    resumeData: typeof resumeData;
+    resumeData: ResumeDataType;
     profileImage: ImagePlaceholder | undefined;
 };
 
 export function ResumeHero({ resumeData, profileImage }: ResumeHeroProps) {
-  const handlePrint = () => {
-    window.print();
-  };
-  
   return (
     <section id="hero-printable" className="flex flex-col md:flex-row items-center gap-8 border-b pb-8">
       <div
-        className="w-32 h-32 md:w-40 md:h-40 rounded-full shrink-0 overflow-hidden border-4 border-primary/20 shadow-lg print:w-32 print:h-32 cursor-pointer"
-        onClick={handlePrint}
-        title="Imprimir o Guardar CV"
+        className="w-32 h-32 md:w-40 md:h-40 rounded-full shrink-0 overflow-hidden border-4 border-primary/20 shadow-lg print:w-32 print:h-32"
       >
         <Image
           src={profileImage?.imageUrl || 'https://picsum.photos/seed/1/200/200'}

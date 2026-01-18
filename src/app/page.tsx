@@ -21,6 +21,8 @@ import {
 import { resumeData } from '@/lib/data';
 import { ContactForm } from '@/components/contact-form';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Link from 'next/link';
+import { CurrentYear } from '@/components/current-year';
 
 export default function Home() {
   const profileImage = PlaceHolderImages.find(
@@ -89,46 +91,22 @@ export default function Home() {
 
         <section id="resume" className="py-16 space-y-16">
           <div>
-            <h3 className="text-3xl font-bold font-headline mb-12 text-center flex items-center justify-center gap-3">
-              <Briefcase className="h-8 w-8 text-primary" />
-              Experiencia Laboral
-            </h3>
-            <div className="relative space-y-8 before:absolute before:inset-0 before:left-5 before:h-full before:w-0.5 before:-translate-x-px before:bg-border/70 md:before:mx-auto md:before:left-auto">
-              {resumeData.experience.map((job, index) => (
-                <div
-                  key={index}
-                  className="relative flex items-start gap-6 md:justify-center md:odd:flex-row-reverse"
-                >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-card border shadow-sm shrink-0 z-10">
-                    <Briefcase className="h-5 w-5 text-primary" />
-                  </div>
-                  <Card className="md:w-[calc(50%-2.5rem-0.75rem)]">
-                    <CardHeader>
-                      <div className="flex justify-between items-start">
-                        <div>
-                          <CardTitle className="font-headline text-xl">
-                            {job.role}
-                          </CardTitle>
-                          <p className="text-muted-foreground">{job.company}</p>
-                        </div>
-                        <Badge
-                          variant="secondary"
-                          className="hidden sm:inline-flex whitespace-nowrap"
-                        >
-                          {job.period}
-                        </Badge>
-                      </div>
-                    </CardHeader>
-                    <CardContent>
-                      <p>{job.description}</p>
-                      <Badge variant="secondary" className="sm:hidden mt-2">
-                        {job.period}
-                      </Badge>
-                    </CardContent>
-                  </Card>
-                </div>
-              ))}
-            </div>
+            <Card className="max-w-4xl mx-auto text-center">
+                <CardHeader>
+                    <CardTitle className="font-headline text-3xl flex items-center justify-center gap-3">
+                        <Briefcase className="h-8 w-8 text-primary" />
+                        Experiencia Laboral
+                    </CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                        Con una trayectoria que abarca desde la fundación de startups hasta roles gerenciales en grandes corporaciones, mi experiencia combina estrategia, gestión y ejecución. Haz clic para ver un desglose detallado de mi carrera profesional.
+                    </p>
+                    <Button asChild size="lg">
+                        <Link href="/experience">Ver mi trayectoria</Link>
+                    </Button>
+                </CardContent>
+            </Card>
           </div>
 
           <div>
@@ -206,7 +184,7 @@ export default function Home() {
 
       <footer className="container mx-auto px-4 py-6 text-center text-muted-foreground">
         <p>
-          &copy; {new Date().getFullYear()} {resumeData.name}. Todos los
+          &copy; <CurrentYear /> {resumeData.name}. Todos los
           derechos reservados.
         </p>
       </footer>

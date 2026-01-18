@@ -32,35 +32,8 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen bg-background">
-      <header className="container mx-auto px-4 py-6 flex justify-between items-center sticky top-0 z-30 bg-background/80 backdrop-blur-sm">
+      <header className="container mx-auto px-4 py-6 flex justify-center items-center sticky top-0 z-30 bg-background/80 backdrop-blur-sm">
         <h1 className="text-xl font-bold font-headline">Perfil Profesional</h1>
-        <div className="flex items-center gap-4">
-          <a
-            href={`mailto:${resumeData.contact.email}`}
-            aria-label="Email"
-            className="text-muted-foreground hover:text-primary transition-colors"
-          >
-            <Mail className="h-5 w-5" />
-          </a>
-          <a
-            href={`https://wa.me/${resumeData.contact.phone.replace('+', '')}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="WhatsApp"
-            className="text-muted-foreground hover:text-primary transition-colors"
-          >
-            <Phone className="h-5 w-5" />
-          </a>
-          <a
-            href={`https://${resumeData.contact.linkedin}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="text-muted-foreground hover:text-primary transition-colors"
-          >
-            <Linkedin className="h-5 w-5" />
-          </a>
-        </div>
       </header>
 
       <main className="flex-grow container mx-auto px-4 py-8">
@@ -84,6 +57,35 @@ export default function Home() {
           <p className="text-xl md:text-2xl text-primary mt-2 font-headline">
             {resumeData.title}
           </p>
+
+          <div className="flex items-center justify-center gap-6 mt-6">
+            <a
+              href={`mailto:${resumeData.contact.email}`}
+              aria-label="Email"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Mail className="h-6 w-6" />
+            </a>
+            <a
+              href={`https://wa.me/${resumeData.contact.phone.replace('+', '')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Phone className="h-6 w-6" />
+            </a>
+            <a
+              href={`https://www.${resumeData.contact.linkedin}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Linkedin className="h-6 w-6" />
+            </a>
+          </div>
+
           <div className="flex items-center justify-center gap-2 mt-4 text-muted-foreground">
             <MapPin className="h-5 w-5" />
             <span>{resumeData.location}</span>
@@ -103,14 +105,14 @@ export default function Home() {
 
         <section id="resume" className="py-16 space-y-16">
           <div>
-            <Card className="max-w-4xl mx-auto text-center">
+            <Card className="max-w-4xl mx-auto">
               <CardHeader>
                 <CardTitle className="font-headline text-3xl flex items-center justify-center gap-3">
                   <Briefcase className="h-8 w-8 text-primary" />
                   Experiencia Laboral
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="text-center">
                 <p className="max-w-2xl mx-auto mb-8 text-muted-foreground">
                   Un recorrido detallado por mi trayectoria, donde podrás explorar los roles, responsabilidades y logros en cada una de mis experiencias profesionales.
                 </p>

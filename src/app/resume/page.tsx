@@ -4,13 +4,16 @@ import {
   Briefcase,
   GraduationCap,
   Sparkles,
+  ArrowLeft,
 } from 'lucide-react';
 import { resumeData } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CurrentYear } from '@/components/current-year';
 import type { Metadata } from 'next';
-import { ResumeHeader } from '@/components/resume-header';
 import { ResumeHero } from '@/components/resume-hero';
+import { PrintButton } from '@/components/print-button';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
   title: 'CV Online | Perfil Profesional',
@@ -24,7 +27,15 @@ export default function ResumePage() {
 
   return (
     <div className="bg-background print:bg-white">
-      <ResumeHeader />
+      <header className="container mx-auto px-4 py-6 flex justify-between items-center no-print">
+        <Button asChild variant="ghost">
+          <Link href="/" className="flex items-center gap-2">
+            <ArrowLeft className="h-5 w-5" />
+            <span>Volver al Perfil</span>
+          </Link>
+        </Button>
+        <PrintButton />
+      </header>
       
       <div className="container mx-auto p-4 md:p-8">
         <main className="printable-area bg-card text-card-foreground shadow-lg rounded-lg p-8 md:p-12 print:shadow-none print:rounded-none print:p-0">

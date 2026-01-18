@@ -96,6 +96,41 @@ export const resumeData = {
         'Tecnologías Web Modernas',
     ],
   },
+  functionalAchievements: {
+    commercial: {
+        title: 'Estrategia Comercial y de Negocios',
+        icon: 'TrendingUp',
+        achievements: [
+            'Desarrollo y ejecución de planes de negocio integrales, desde el estudio de mercado hasta la puesta en marcha.',
+            'Liderazgo y motivación de equipos de ventas, implementando estrategias para superar objetivos y récords.',
+            'Creación de nuevos canales de venta, estrategias de marketing y posicionamiento de productos.',
+            'Negociación de acuerdos comerciales clave y gestión de relaciones con clientes B2B y proveedores estratégicos.',
+            'Definición de la estrategia de producto, desde la concepción del MVP hasta la hoja de ruta para lanzamiento y rondas de inversión.',
+        ]
+    },
+    administrative: {
+        title: 'Gestión Administrativa y Financiera',
+        icon: 'Landmark',
+        achievements: [
+            'Análisis de costos, riesgo y rentabilidad para optimizar la toma de decisiones estratégicas.',
+            'Diseño e implementación de procesos administrativos y logísticos desde cero para mejorar la eficiencia.',
+            'Gestión y control de P&L, compras, proveedores y negociaciones para maximizar la rentabilidad.',
+            'Reestructuración de áreas y perfiles de puesto para eliminar la superposición de tareas.',
+            'Administración general de sistemas, control de inventarios, gestiones bancarias y habilitaciones.',
+        ]
+    },
+    operational: {
+        title: 'Operaciones y Desarrollo Tecnológico',
+        icon: 'Cog',
+        achievements: [
+            'Transformación de ideas de negocio en prototipos de alta fidelidad y productos digitales funcionales.',
+            'Desarrollo y arquitectura de soluciones tecnológicas utilizando IA Generativa para máxima eficiencia de recursos.',
+            'Puesta en marcha y gestión integral de operaciones, incluyendo logística, flota y cadena de suministro.',
+            'Supervisión de la cadena de suministro, garantizando el abastecimiento continuo en entornos de alta demanda.',
+            'Liderazgo de proyectos complejos bajo presión, como la adjudicación y puesta en marcha del servicio de emergencias 107.',
+        ]
+    }
+  },
   education: [
     {
       institution: 'Universidad Tecnológica Nacional',

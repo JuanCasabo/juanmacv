@@ -20,7 +20,15 @@ import {
   Phone,
   Sparkles,
   TrendingUp,
+  Landmark,
+  Cog,
 } from 'lucide-react';
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from '@/components/ui/tabs';
 import { resumeData } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
@@ -41,9 +49,7 @@ export default function Home() {
         <section id="hero" className="text-center py-16">
           <div className="w-48 h-48 rounded-full mx-auto mb-6 overflow-hidden border-4 border-primary/20 shadow-lg">
             <Image
-              src={
-                profileImage?.imageUrl || '/profile.jpg'
-              }
+              src={'/20251015_135606.jpg'}
               alt={resumeData.name}
               width={192}
               height={192}
@@ -161,6 +167,74 @@ export default function Home() {
               </CardContent>
             </Card>
           </div>
+
+          <section id="functional-achievements" className="py-16">
+            <h3 className="text-3xl font-bold font-headline mb-8 text-center flex items-center justify-center gap-3">
+                <Briefcase className="h-8 w-8 text-primary" />
+                Logros por Área Funcional
+            </h3>
+            <Tabs defaultValue="commercial" className="max-w-4xl mx-auto">
+                <TabsList className="grid w-full grid-cols-3 h-auto py-2">
+                    <TabsTrigger value="commercial" className="flex flex-col sm:flex-row h-full gap-1 sm:gap-2">
+                        <TrendingUp className="h-5 w-5"/><span>Comercial</span>
+                    </TabsTrigger>
+                    <TabsTrigger value="administrative" className="flex flex-col sm:flex-row h-full gap-1 sm:gap-2">
+                        <Landmark className="h-5 w-5"/><span>Administrativa</span>
+                    </TabsTrigger>
+                    <TabsTrigger value="operational" className="flex flex-col sm:flex-row h-full gap-1 sm:gap-2">
+                        <Cog className="h-5 w-5"/><span>Operaciones</span>
+                    </TabsTrigger>
+                </TabsList>
+                
+                <TabsContent value="commercial" className="mt-6">
+                    <Card>
+                        <CardHeader>
+                            <CardTitle className="font-headline text-xl flex items-center gap-3">
+                                 <TrendingUp className="h-6 w-6 text-accent" />
+                                {resumeData.functionalAchievements.commercial.title}
+                            </CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <ul className="list-disc space-y-3 pl-5 text-muted-foreground">
+                                {resumeData.functionalAchievements.commercial.achievements.map((item, i) => <li key={i}>{item}</li>)}
+                            </ul>
+                        </CardContent>
+                    </Card>
+                </TabsContent>
+
+                <TabsContent value="administrative" className="mt-6">
+                    <Card>
+                        <CardHeader>
+                            <CardTitle className="font-headline text-xl flex items-center gap-3">
+                                 <Landmark className="h-6 w-6 text-accent" />
+                                {resumeData.functionalAchievements.administrative.title}
+                            </CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <ul className="list-disc space-y-3 pl-5 text-muted-foreground">
+                                {resumeData.functionalAchievements.administrative.achievements.map((item, i) => <li key={i}>{item}</li>)}
+                            </ul>
+                        </CardContent>
+                    </Card>
+                </TabsContent>
+
+                <TabsContent value="operational" className="mt-6">
+                     <Card>
+                        <CardHeader>
+                            <CardTitle className="font-headline text-xl flex items-center gap-3">
+                                 <Cog className="h-6 w-6 text-accent" />
+                                {resumeData.functionalAchievements.operational.title}
+                            </CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <ul className="list-disc space-y-3 pl-5 text-muted-foreground">
+                                {resumeData.functionalAchievements.operational.achievements.map((item, i) => <li key={i}>{item}</li>)}
+                            </ul>
+                        </CardContent>
+                    </Card>
+                </TabsContent>
+            </Tabs>
+        </section>
 
           <div>
             <h3 className="text-3xl font-bold font-headline mb-8 text-center flex items-center justify-center gap-3">

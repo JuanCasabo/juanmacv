@@ -3,8 +3,8 @@
     {
       "id": "profile-picture",
       "description": "Professional portrait of a person.",
-      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3Njg3NjA1ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "professional portrait"
+      "imageUrl": "https://storage.googleapis.com/project-os-prod/images/b18c0c45-4235-4379-8131-77885b315354",
+      "imageHint": "man standing"
     }
   ]
 }

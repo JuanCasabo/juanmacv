@@ -9,5 +9,12 @@ export function CurrentYear() {
     setYear(new Date().getFullYear());
   }, []);
 
+  // By returning null on the server and on the first client render,
+  // we prevent a hydration mismatch. The year will appear only after
+  // the client-side code has safely run.
+  if (year === null) {
+    return null;
+  }
+
   return <span>{year}</span>;
 }

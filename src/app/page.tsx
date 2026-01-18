@@ -102,13 +102,6 @@ export default function Home() {
                 Ver CV Online
               </Link>
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={() => window.print()}
-            >
-              Imprimir Página (Prueba)
-            </Button>
           </div>
         </section>
 

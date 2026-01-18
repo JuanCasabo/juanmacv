@@ -1,22 +1,16 @@
-import Image from 'next/image';
+
 import { Badge } from '@/components/ui/badge';
 import {
   Briefcase,
-  Code,
   GraduationCap,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
   Sparkles,
-  TrendingUp,
 } from 'lucide-react';
 import { resumeData } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import Link from 'next/link';
 import { CurrentYear } from '@/components/current-year';
 import type { Metadata } from 'next';
 import { ResumeHeader } from '@/components/resume-header';
+import { ResumeHero } from '@/components/resume-hero';
 
 export const metadata: Metadata = {
   title: 'CV Online | Perfil Profesional',
@@ -34,48 +28,7 @@ export default function ResumePage() {
       
       <div className="container mx-auto p-4 md:p-8">
         <main className="printable-area bg-card text-card-foreground shadow-lg rounded-lg p-8 md:p-12 print:shadow-none print:rounded-none print:p-0">
-          {/* Hero Section */}
-          <section id="hero-printable" className="flex flex-col md:flex-row items-center gap-8 border-b pb-8">
-            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full shrink-0 overflow-hidden border-4 border-primary/20 shadow-lg print:w-32 print:h-32">
-              <Image
-                src={
-                  profileImage?.imageUrl || 'https://picsum.photos/seed/1/200/200'
-                }
-                alt={resumeData.name}
-                width={160}
-                height={160}
-                className="object-cover h-full w-full"
-                data-ai-hint={profileImage?.imageHint}
-                priority
-              />
-            </div>
-            <div className="text-center md:text-left">
-              <h1 className="text-4xl font-bold font-headline text-foreground print:text-3xl">
-                {resumeData.name}
-              </h1>
-              <p className="text-xl text-primary mt-1 font-headline print:text-lg">
-                {resumeData.title}
-              </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start flex-wrap gap-x-6 gap-y-2 mt-4 text-muted-foreground text-sm">
-                <div className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4" />
-                  <span>{resumeData.location}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Mail className="h-4 w-4" />
-                  <a href={`mailto:${resumeData.contact.email}`} className="hover:underline">{resumeData.contact.email}</a>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Phone className="h-4 w-4" />
-                  <a href={`https://wa.me/${resumeData.contact.phone.replace('+', '')}`} target="_blank" rel="noopener noreferrer" className="hover:underline">{resumeData.contact.phone}</a>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Linkedin className="h-4 w-4" />
-                  <a href={resumeData.contact.linkedin} target="_blank" rel="noopener noreferrer" className="hover:underline">linkedin.com/in/juan-manuel-correa...</a>
-                </div>
-              </div>
-            </div>
-          </section>
+          <ResumeHero resumeData={resumeData} profileImage={profileImage} />
 
           {/* Summary */}
           <section className="py-8">

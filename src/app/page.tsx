@@ -94,34 +94,20 @@ export default function Home() {
         <section id="resume" className="py-16 space-y-16">
           <div>
             <Card className="max-w-4xl mx-auto text-center">
-                <CardHeader>
-                    <CardTitle className="font-headline text-3xl flex items-center justify-center gap-3">
-                        <Briefcase className="h-8 w-8 text-primary" />
-                        Experiencia Laboral Reciente
-                    </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4 text-left max-w-2xl mx-auto mb-8">
-                    {resumeData.experience.slice(0, 3).map((job, index) => (
-                      <div
-                        key={index}
-                        className="flex items-start gap-4 rounded-lg border bg-card p-4 shadow-sm transition-colors hover:bg-secondary/20"
-                      >
-                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary shrink-0">
-                          <Briefcase className="h-6 w-6 text-primary" />
-                        </div>
-                        <div className="flex-grow">
-                          <h4 className="font-headline text-lg font-semibold text-primary">{job.role}</h4>
-                          <p className="font-medium">{job.company}</p>
-                          <p className="text-sm text-muted-foreground">{job.period}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  <Button asChild size="lg">
-                    <Link href="/experience">Ver mi trayectoria completa</Link>
-                  </Button>
-                </CardContent>
+              <CardHeader>
+                <CardTitle className="font-headline text-3xl flex items-center justify-center gap-3">
+                  <Briefcase className="h-8 w-8 text-primary" />
+                  Experiencia Laboral
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="max-w-2xl mx-auto mb-8 text-muted-foreground">
+                  Un recorrido detallado por mi trayectoria, donde podrás explorar los roles, responsabilidades y logros en cada una de mis experiencias profesionales.
+                </p>
+                <Button asChild size="lg">
+                  <Link href="/experience">Ver mi trayectoria completa</Link>
+                </Button>
+              </CardContent>
             </Card>
           </div>
 

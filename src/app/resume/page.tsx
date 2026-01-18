@@ -107,7 +107,6 @@ export default function ResumePage() {
                           <p className="text-sm text-muted-foreground font-medium">{job.period}</p>
                           <h3 className="font-headline text-lg font-semibold print:text-base">{job.role}</h3>
                           <p className="text-muted-foreground font-medium">{job.company}</p>
-                          <p className="mt-2 text-sm whitespace-pre-wrap text-muted-foreground print:text-xs print:whitespace-normal">{job.description}</p>
                         </div>
                     </div>
                   ))}

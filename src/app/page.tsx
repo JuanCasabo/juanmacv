@@ -149,14 +149,14 @@ export default function Home() {
                     ([category, skillsList]) => (
                       <div key={category}>
                         <h4 className="font-headline text-lg mb-4 flex items-center gap-2 font-medium">
-                          {category === 'Programación' && (
+                          {category === 'Tecnología y Programación' && (
                             <Code className="h-5 w-5 text-accent" />
                           )}
-                          {category === 'Ventas y Negocios' && (
-                            <TrendingUp className="h-5 w-5 text-accent" />
-                          )}
-                          {category === 'Administración' && (
+                          {category === 'Liderazgo y Gestión Comercial' && (
                             <Briefcase className="h-5 w-5 text-accent" />
+                          )}
+                          {category === 'Análisis y Estrategia de Negocios' && (
+                            <TrendingUp className="h-5 w-5 text-accent" />
                           )}
                           {category}
                         </h4>
@@ -180,9 +180,9 @@ export default function Home() {
               <GraduationCap className="h-8 w-8 text-primary" />
               Educación
             </h3>
-            <div className="flex justify-center">
+            <div className="flex justify-center flex-wrap gap-8">
               {resumeData.education.map((edu, index) => (
-                <Card key={index} className="w-full max-w-md">
+                <Card key={index} className="w-full max-w-sm">
                   <CardHeader>
                     <div className="flex items-center gap-4">
                       <div className="p-3 bg-secondary rounded-lg">

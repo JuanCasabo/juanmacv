@@ -1,68 +1,87 @@
 export const resumeData = {
-  name: 'Juan Pérez',
-  title: 'Desarrollador Full-Stack & Estratega de Ventas',
-  location: 'Ciudad de México, México',
+  name: 'Juan M. Correa',
+  title: 'Analista de Negocios & Desarrollador Tecnológico',
+  location: 'Mar del Plata, Argentina (Disponibilidad para reubicarme)',
   contact: {
-    email: 'juan.perez@example.com',
-    phone: '+52 55 1234 5678',
-    linkedin: 'linkedin.com/in/juanperez-example',
+    email: 'juanmacorrea1602@gmail.com',
+    phone: '+5492236358121',
+    linkedin: 'linkedin.com/in/juanmcorrea-example',
   },
   summary:
-    'Un profesional dinámico con una combinación única de experiencia en desarrollo de software, administración de proyectos y ventas técnicas. Apasionado por crear soluciones tecnológicas que impulsen el crecimiento del negocio y mejoren la experiencia del cliente.',
+    'Profesional multifacético con una trayectoria sólida que fusiona la estrategia de negocios, la gestión administrativa y el desarrollo tecnológico. Experto en transformar ideas en productos funcionales, como demostró al construir un prototipo Fintech con IA. Poseo una profunda experiencia en análisis de rentabilidad, optimización de procesos y liderazgo de equipos en diversos sectores. Actualmente consolidando mi perfil técnico como programador para crear soluciones que integren visión comercial y eficiencia operativa.',
   experience: [
     {
-      company: 'Tech Solutions S.A.',
-      role: 'Desarrollador Full-Stack Senior',
-      period: 'Ene 2020 - Presente',
+      company: 'Group Dreaming',
+      role: 'Founder & CEO',
+      period: 'Sep 2025 - Presente',
       description:
-        'Lideré el desarrollo de una nueva plataforma SaaS, mejorando la eficiencia del cliente en un 40%. Colaboré con los equipos de ventas y producto para definir los requisitos y la hoja de ruta de las funciones.',
+        'Liderazgo en el diseño de un prototipo Fintech con IA. Definición de lógica financiera, UX, y compliance para preparar el producto para rondas de inversión.',
     },
     {
-      company: 'Innovate Corp',
-      role: 'Ingeniero de Ventas',
-      period: 'Jun 2017 - Dic 2019',
+      company: 'PACHATA - café & restó',
+      role: 'Director Administrativo/Comercial',
+      period: 'Sep 2023 - May 2025',
       description:
-        'Superé las cuotas de ventas en un 25% durante dos años consecutivos. Realicé demostraciones técnicas de productos a clientes potenciales y brindé soporte técnico postventa.',
+        'Fundación y dirección integral del negocio, desde el plan de negocios y P&L hasta la gestión de marketing y operaciones. Vendido exitosamente tras validar su viabilidad.',
     },
     {
-        company: 'AdminPro Servicios',
-        role: 'Asistente Administrativo',
-        period: 'Ago 2015 - May 2017',
+      company: 'CASA MODA - KUSA S.A.',
+      role: 'Responsable Administrativo',
+      period: 'Jun 2022 - Jul 2023',
+      description:
+        'Optimización de logística y depósito, análisis de costos y rentabilidad. Elaboración de perfiles de puestos para mejorar la eficiencia organizacional.',
+    },
+    {
+      company: 'SUPERMERCADOS TOLEDO',
+      role: 'Gerente de Compras (Sector Industria)',
+      period: 'Jun 2021 - May 2022',
+      description:
+        'Responsable de compras industriales. Garanticé el abastecimiento en un entorno inflacionario mediante negociación estratégica y optimicé la cadena de suministro.',
+    },
+    {
+        company: 'SMI “voy a estar” - Medyc S.R.L.',
+        role: 'Coordinador de Servicios / Administrativo',
+        period: 'Jun 2019 - Jun 2021',
         description:
-          'Gestioné la facturación, los horarios y las comunicaciones de la oficina. Implementé un nuevo sistema de archivo digital que redujo el tiempo de recuperación de documentos en un 50%.',
-      },
+          'Adjudicación y puesta en marcha del servicio de emergencias público (107). Optimicé la rentabilidad renegociando contratos y cambiando el modelo de ingresos.',
+    },
   ],
   skills: {
-    Programación: [
-      'JavaScript (ES6+)',
-      'TypeScript',
-      'React',
-      'Next.js',
-      'Node.js',
-      'Python',
-      'SQL',
-      'Docker',
+    'Análisis y Estrategia de Negocios': [
+        'Planes de Negocios',
+        'Análisis de Datos (Costos, Riesgo, Rentabilidad)',
+        'Elaboración y seguimiento de P&L',
+        'Identificación de KPI y OKR',
+        'Optimización de Procesos',
+        'Análisis de Mercado',
     ],
-    'Ventas y Negocios': [
-      'Ventas Técnicas',
-      'Gestión de CRM (Salesforce)',
-      'Estrategia de Mercado',
-      'Negociación',
-      'Generación de Leads',
+    'Liderazgo y Gestión Comercial': [
+        'Liderazgo y Desarrollo de Equipos',
+        'Negociación y Acuerdos Comerciales',
+        'Gestión de Compras y Proveedores',
+        'Estrategia de Ventas',
+        'Venta Consultiva B2B',
+        'Marketing y Posicionamiento',
     ],
-    Administración: [
-      'Gestión de Proyectos (Agile/Scrum)',
-      'Jira',
-      'Confluence',
-      'Liderazgo de Equipos',
-      'Presupuestos',
+    'Tecnología y Programación': [
+        'Desarrollo con IA Generativa',
+        'Arquitectura de Producto Digital (MVP)',
+        'Análisis de Datos con Excel (Macros)',
+        'Sistemas de Gestión (FUDO, Tango, ZEUS)',
+        'Cursando Tec. en Programación (UTN)',
+        'Tecnologías Web Modernas',
     ],
   },
   education: [
     {
-      institution: 'Universidad Nacional Autónoma de México (UNAM)',
-      degree: 'Ingeniería en Computación',
-      period: '2012 - 2017',
+      institution: 'Universidad Tecnológica Nacional',
+      degree: 'Tec. en Programación (Cursando)',
+      period: '2023 - Presente',
+    },
+    {
+      institution: 'Universidad Empresarial Siglo XXI',
+      degree: 'Lic. en Administración (Pausada)',
+      period: 'Estudios Previos',
     },
   ],
 };

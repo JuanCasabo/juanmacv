@@ -1,12 +1,12 @@
 "use client";
 
-import { useFormState, useFormStatus } from "react-dom";
+import { useFormStatus } from "react-dom";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { createProfile } from "@/lib/actions";
-import { useEffect, useRef } from "react";
+import { useActionState, useEffect, useRef } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Sparkles } from "lucide-react";
 
@@ -23,7 +23,7 @@ function SubmitButton() {
 }
 
 export function ProfileGenerator() {
-  const [state, dispatch] = useFormState(createProfile, initialState);
+  const [state, dispatch] = useActionState(createProfile, initialState);
   const { toast } = useToast();
   const formRef = useRef<HTMLFormElement>(null);
 

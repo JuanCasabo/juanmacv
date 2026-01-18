@@ -48,7 +48,7 @@ export default function Home() {
               alt={resumeData.name}
               width={128}
               height={128}
-              className="object-cover h-full w-full"
+              className="object-cover h-full w-full scale-125"
               data-ai-hint={profileImage?.imageHint}
               priority
             />

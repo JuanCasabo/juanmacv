@@ -1,3 +1,4 @@
+
 "use client";
 
 import { ArrowLeft, Printer } from "lucide-react";
@@ -6,11 +7,12 @@ import Link from "next/link";
 import React from "react";
 
 export function ResumeHeader() {
-  const handlePrint = () => {
-    const originalTitle = document.title;
-    document.title = "Mi_Curriculum_Vitae"; // Nombre que sugerirá el PDF
-    window.print();
-    document.title = originalTitle; // Restaura el título original
+  // Definimos la función explícitamente
+  const handlePrint = (e: React.MouseEvent) => {
+    e.preventDefault(); // Evitamos cualquier comportamiento por defecto
+    if (typeof window !== "undefined") {
+      window.print();
+    }
   };
 
   return (
@@ -21,13 +23,15 @@ export function ResumeHeader() {
           <span>Volver al Perfil</span>
         </Link>
       </Button>
-      <button
-        onClick={handlePrint}
-        className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"
+      
+      <Button
+        type="button" // Aseguramos que sea tipo button
+        variant="outline"
+        onClick={handlePrint} // Usamos la función definida arriba
       >
         <Printer className="h-4 w-4" />
-        <span>Imprimir o Guardar</span>
-      </button>
+        <span className="ml-2">Imprimir o Guardar</span>
+      </Button>
     </header>
   );
 }

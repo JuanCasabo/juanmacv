@@ -6,6 +6,13 @@ import Link from "next/link";
 import React from "react";
 
 export function ResumeHeader() {
+  const handlePrint = () => {
+    const originalTitle = document.title;
+    document.title = "Mi_Curriculum_Vitae"; // Nombre que sugerirá el PDF
+    window.print();
+    document.title = originalTitle; // Restaura el título original
+  };
+
   return (
     <header className="container mx-auto px-4 py-6 flex justify-between items-center no-print">
       <Button asChild variant="ghost">
@@ -16,7 +23,7 @@ export function ResumeHeader() {
       </Button>
       <Button
         variant="outline"
-        onClick={() => window.print()}
+        onClick={handlePrint}
       >
         <Printer className="h-4 w-4" />
         <span className="ml-2">Imprimir o Guardar</span>

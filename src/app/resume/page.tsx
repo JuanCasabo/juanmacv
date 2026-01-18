@@ -32,7 +32,7 @@ export default function ResumePage() {
 
   return (
     <div className="bg-background print:bg-white">
-      <header className="container mx-auto px-4 py-6 flex justify-between items-center sticky top-0 z-30 bg-background/80 backdrop-blur-sm no-print">
+      <header className="container mx-auto px-4 py-6 flex justify-between items-center bg-background/80 backdrop-blur-sm no-print">
         <Button asChild variant="ghost">
           <Link href="/" className="flex items-center gap-2">
             <ArrowLeft className="h-5 w-5" />
@@ -81,7 +81,7 @@ export default function ResumePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Linkedin className="h-4 w-4" />
-                  <a href={`https://${resumeData.contact.linkedin}`} target="_blank" rel="noopener noreferrer" className="hover:underline">{resumeData.contact.linkedin}</a>
+                  <a href={resumeData.contact.linkedin} target="_blank" rel="noopener noreferrer" className="hover:underline">linkedin.com/in/juan-manuel-correa...</a>
                 </div>
               </div>
             </div>

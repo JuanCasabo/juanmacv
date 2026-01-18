@@ -97,16 +97,30 @@ export default function Home() {
                 <CardHeader>
                     <CardTitle className="font-headline text-3xl flex items-center justify-center gap-3">
                         <Briefcase className="h-8 w-8 text-primary" />
-                        Experiencia Laboral
+                        Experiencia Laboral Reciente
                     </CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                        Con una trayectoria que abarca desde la fundación de startups hasta roles gerenciales en grandes corporaciones, mi experiencia combina estrategia, gestión y ejecución. Haz clic para ver un desglose detallado de mi carrera profesional.
-                    </p>
-                    <Button asChild size="lg">
-                        <Link href="/experience">Ver mi trayectoria</Link>
-                    </Button>
+                  <div className="space-y-4 text-left max-w-2xl mx-auto mb-8">
+                    {resumeData.experience.slice(0, 3).map((job, index) => (
+                      <div
+                        key={index}
+                        className="flex items-start gap-4 rounded-lg border bg-card p-4 shadow-sm transition-colors hover:bg-secondary/20"
+                      >
+                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary shrink-0">
+                          <Briefcase className="h-6 w-6 text-primary" />
+                        </div>
+                        <div className="flex-grow">
+                          <h4 className="font-headline text-lg font-semibold text-primary">{job.role}</h4>
+                          <p className="font-medium">{job.company}</p>
+                          <p className="text-sm text-muted-foreground">{job.period}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <Button asChild size="lg">
+                    <Link href="/experience">Ver mi trayectoria completa</Link>
+                  </Button>
                 </CardContent>
             </Card>
           </div>

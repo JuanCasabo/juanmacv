@@ -5,7 +5,6 @@ import {
   CardHeader,
   CardTitle,
   CardContent,
-  CardDescription,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import {
@@ -20,7 +19,6 @@ import {
   TrendingUp,
 } from 'lucide-react';
 import { resumeData } from '@/lib/data';
-import { ProfileGenerator } from '@/components/profile-generator';
 import { ContactForm } from '@/components/contact-form';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -87,10 +85,6 @@ export default function Home() {
               Descargar CV
             </Button>
           </div>
-        </section>
-
-        <section id="profile-generator" className="py-16">
-          <ProfileGenerator />
         </section>
 
         <section id="resume" className="py-16 space-y-16">

@@ -22,28 +22,28 @@ export const resumeData = {
       role: 'Director Administrativo/Comercial',
       period: 'Sep 2023 - May 2025',
       description:
-        'El Origen del Proyecto: "Pachata" nació de una necesidad personal y familiar de encontrar un espacio en Mar del Plata donde los padres pudieran disfrutar de un momento de ocio mientras sus hijos juegan en un entorno seguro.\n\nDesarrollo y Planificación: El proyecto se fundamentó en un sólido plan de negocios, un estudio de mercado exhaustivo y un detallado P&L que proyectaba la rentabilidad, contemplando variables como inflación, CMV y múltiples canales de ingreso. La financiación se realizó mediante apalancamiento bancario.\n\nGestión y Puesta en Marcha: Como Director, mi rol fue integral. Participé en la operatividad para establecer procesos y luego me enfoqué en dirigir las áreas de marketing, finanzas, compras, y personal. El espacio de juegos fue diseñado con psicólogos, priorizando la seguridad y el desarrollo didáctico.\n\nFinalización del Ciclo: El proyecto demostró ser viable. Se tomó la decisión de vender el negocio para capitalizar el valor generado y reorientar mi carrera profesional hacia la programación.',
+        'Responsabilidades: Análisis de mercado, posicionamiento de productos, negociación con proveedores y liderazgo de equipos.\n\nProyecto Detallado: Fundé "Pachata" como un café para familias, basado en un plan de negocios y P&L. Lideré integralmente el proyecto, desde la operación hasta la gestión de marketing, finanzas y compras. Decidí vender el negocio para capitalizar su valor y enfocarme en la programación.',
     },
     {
       company: 'CASA MODA - KUSA S.A.',
       role: 'Responsable Administrativo',
       period: 'Jun 2022 - Jul 2023',
       description:
-        'Contexto y Desafío: Al incorporarme, el puesto fue redefinido para aprovechar mi perfil analítico y optimizar el área de logística y depósito, que presentaba ineficiencias críticas.\n\nReestructuración de Procesos Logísticos: Diseñé y documenté un nuevo procedimiento logístico, desde la recepción hasta el egreso de mercadería, y capacité al personal para asegurar su correcta implementación.\n\nAnálisis de Rentabilidad y Organización: Realicé una auditoría de costos y precios, evaluando la rentabilidad por producto mediante análisis en Excel. Paralelamente, elaboré perfiles de puestos para eliminar la superposición de tareas.\n\nResultados: El principal logro fue la organización estructural del depósito, mejorando la eficiencia y la precisión en los controles de stock.',
+        'Responsabilidades: Desarrollo de procesos administrativos y logísticos, elaboración de perfiles de puestos y análisis de costos.\n\nProyecto Detallado: Optimicé el área de logística diseñando un nuevo procedimiento y capacitando al personal. Realicé una auditoría de costos para evaluar la rentabilidad por producto y organicé la estructura de puestos, mejorando la eficiencia y el control de stock.',
     },
     {
       company: 'SUPERMERCADOS TOLEDO',
       role: 'Gerente de Compras (Sector Industria)',
       period: 'Jun 2021 - May 2022',
       description:
-        'Ascenso y Contexto: Fui promovido a Gerente de Compras en un momento crítico. El desafío era optimizar un área gestionada con procesos informales y optimizar la operación logística.\n\nEstrategias de Negociación: En un contexto financiero comprometido, mi estrategia se centró en construir confianza con los proveedores para asegurar la entrega de mercadería en cuenta corriente. La renegociación constante fue clave para mantener el flujo de insumos vitales (maíz, soja, porcinos).\n\nLogros Significativos: Garanticé el abastecimiento continuo, convenciendo a proveedores de respetar precios a pesar de la inflación. Implementé una nueva estructura de pedidos basada en la vida útil de la materia prima y la capacidad de almacenamiento, optimizando la cadena de suministro.',
+        'Responsabilidades: Planificación de compras, gestión de proveedores, análisis de presupuestos y negociación de precios para insumos clave (maíz, soja, porcinos).\n\nProyecto Detallado: Como Gerente de Compras, optimicé un área con procesos informales. Construí confianza con proveedores para asegurar el abastecimiento en un contexto financiero difícil y rediseñé la estructura de pedidos para optimizar la cadena de suministro.',
     },
     {
         company: 'SMI “voy a estar” - Medyc S.R.L.',
         role: 'Coordinador de Servicios / Administrativo',
         period: 'Jun 2019 - Jun 2021',
         description:
-          'Análisis y Propuestas de Mejora: Al detectar una situación financiera delicada, realicé un análisis de rentabilidad que reveló que convenios críticos como PAMI eran deficitarios. Esto impulsó una revisión completa de acuerdos, renegociando contratos no rentables.\n\nCambio de Modelo de Negocio: Propuse y lideré un cambio en el modelo de los consultorios médicos, pasando de un alquiler fijo a un cobro por porcentaje sobre la facturación, lo que aumentó los ingresos.\n\nLogros Significativos: El logro más destacado fue la adjudicación y puesta en marcha del servicio de emergencias público provincial (107) en solo un mes, demostrando una gran capacidad de gestión y liderazgo bajo presión.',
+          'Responsabilidades: Gestión de suministros, análisis de riesgo, costos y rentabilidad, y propuestas de mejora para unidades de negocio (consultorios, emergencias).\n\nProyecto Detallado: Un análisis de rentabilidad reveló que convenios clave eran deficitarios, lo que impulsó una renegociación de acuerdos. Lideré el cambio del modelo de negocio de los consultorios a un cobro por porcentaje, aumentando ingresos. Adjudiqué y puse en marcha el servicio de emergencias público (107) en un mes.',
     },
     {
         company: 'CREPES confitería restaurante',
@@ -61,13 +61,13 @@ export const resumeData = {
         company: 'Díaz Merino Amoblamientos',
         role: 'Ejecutivo de ventas / Encargado',
         period: 'Mar 2013 - Ago 2015',
-        description: 'Asumí la responsabilidad total de la sucursal, abarcando las áreas administrativa, comercial y de marketing. Mi gestión se centró en la venta consultiva B2B, capitalizando la instalación de compañías mineras en la provincia y gestionando ventas al sector público con plazos de pago extendidos.',
+        description: 'Responsabilidades: Asesoramiento B2B, armado de presupuestos y licitaciones.\n\nProyecto Detallado: Asumí la responsabilidad total de la sucursal, gestionando las áreas administrativa, comercial y de marketing. Me enfoqué en la venta consultiva a empresas mineras y al sector público, negociando plazos de pago extendidos y asegurando la continuidad del negocio con recursos mínimos.',
     },
     {
         company: 'CHEXA - Chevrolet',
         role: 'Supervisor de ventas',
         period: 'Feb 2011 - Feb 2013',
-        description: 'Fui promovido de vendedor a Supervisor en cinco meses. Lideré, motivé y capacité al equipo para cumplir los objetivos de ventas, implementando estrategias de captación masiva y motivación multifactorial.',
+        description: 'Responsabilidades: Liderar y motivar al equipo de ventas, capacitación, seguimiento de calidad y desarrollo de estrategias comerciales.\n\nProyecto Detallado: Fui promovido a Supervisor en cinco meses. Lideré al equipo para cumplir objetivos implementando estrategias de captación masiva y un enfoque de motivación multifactorial. Destaqué por recuperar ventas complejas mediante la escucha activa y la redefinición de la estrategia.',
     }
   ],
   skills: {

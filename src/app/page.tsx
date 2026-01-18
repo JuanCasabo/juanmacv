@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import {
@@ -93,12 +95,19 @@ export default function Home() {
           <p className="max-w-3xl mx-auto mt-6 text-muted-foreground">
             {resumeData.summary}
           </p>
-          <div className="mt-8">
+          <div className="mt-8 flex items-center justify-center gap-4">
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
               <Link href="/resume">
                 <Eye className="mr-2 h-5 w-5" />
                 Ver CV Online
               </Link>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              onClick={() => window.print()}
+            >
+              Imprimir Página (Prueba)
             </Button>
           </div>
         </section>

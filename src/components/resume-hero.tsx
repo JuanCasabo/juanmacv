@@ -20,7 +20,7 @@ export function ResumeHero({ resumeData, profileImage }: ResumeHeroProps) {
           alt={resumeData.name}
           width={160}
           height={160}
-          className="object-cover h-full w-full scale-110"
+          className="object-cover object-[center_40%] h-full w-full scale-110"
           data-ai-hint={profileImage?.imageHint}
           priority
         />

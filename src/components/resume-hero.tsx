@@ -16,7 +16,7 @@ export function ResumeHero({ resumeData, profileImage }: ResumeHeroProps) {
         className="w-32 h-32 md:w-40 md:h-40 rounded-full shrink-0 overflow-hidden border-4 border-primary/20 shadow-lg print:w-32 print:h-32"
       >
         <Image
-          src={profileImage?.imageUrl || 'https://picsum.photos/seed/1/200/200'}
+          src={profileImage?.imageUrl || '/20251015_135606.jpg'}
           alt={resumeData.name}
           width={160}
           height={160}
@@ -47,7 +47,7 @@ export function ResumeHero({ resumeData, profileImage }: ResumeHeroProps) {
           </div>
           <div className="flex items-center gap-2">
             <Linkedin className="h-4 w-4" />
-            <a href={resumeData.contact.linkedin} target="_blank" rel="noopener noreferrer" className="hover:underline">linkedin.com/in/juan-manuel-correa...</a>
+            <a href={`https://${resumeData.contact.linkedin}`} target="_blank" rel="noopener noreferrer" className="hover:underline">linkedin.com/in/juan-manuel-correa...</a>
           </div>
         </div>
       </div>

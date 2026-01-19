@@ -22,6 +22,7 @@ import {
   TrendingUp,
   Landmark,
   Cog,
+  FileText,
 } from 'lucide-react';
 import {
   Tabs,
@@ -101,10 +102,16 @@ export default function Home() {
             {resumeData.summary}
           </p>
           <div className="mt-8 flex items-center justify-center gap-4">
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button asChild size="lg">
               <Link href="/resume">
                 <Eye className="mr-2 h-5 w-5" />
                 Ver CV Online
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <Link href="/cover-letter">
+                <FileText className="mr-2 h-5 w-5" />
+                Ver Carta de Presentación
               </Link>
             </Button>
           </div>

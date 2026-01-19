@@ -111,64 +111,7 @@ export default function Home() {
         </section>
 
         <section id="resume" className="py-16 space-y-16">
-          <div>
-            <Card className="max-w-4xl mx-auto">
-              <CardHeader>
-                <CardTitle className="font-headline text-3xl flex items-center justify-center gap-3">
-                  <Briefcase className="h-8 w-8 text-primary" />
-                  Experiencia Laboral
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <p className="max-w-2xl mx-auto mb-8 text-muted-foreground">
-                  Un recorrido detallado por mi trayectoria, donde podrás explorar los roles, responsabilidades y logros en cada una de mis experiencias profesionales.
-                </p>
-                <Button asChild size="lg">
-                  <Link href="/experience">Ver mi trayectoria completa</Link>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div>
-            <h3 className="text-3xl font-bold font-headline mb-8 text-center flex items-center justify-center gap-3">
-              <Sparkles className="h-8 w-8 text-primary" />
-              Habilidades
-            </h3>
-            <Card>
-              <CardContent className="p-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  {Object.entries(resumeData.skills).map(
-                    ([category, skillsList]) => (
-                      <div key={category}>
-                        <h4 className="font-headline text-lg mb-4 flex items-center gap-2 font-medium">
-                          {category === 'Tecnología y Programación' && (
-                            <Code className="h-5 w-5 text-accent" />
-                          )}
-                          {category === 'Liderazgo y Gestión Comercial' && (
-                            <Briefcase className="h-5 w-5 text-accent" />
-                          )}
-                          {category === 'Análisis y Estrategia de Negocios' && (
-                            <TrendingUp className="h-5 w-5 text-accent" />
-                          )}
-                          {category}
-                        </h4>
-                        <div className="flex flex-wrap gap-2">
-                          {skillsList.map((skill) => (
-                            <Badge key={skill} variant="outline">
-                              {skill}
-                            </Badge>
-                          ))}
-                        </div>
-                      </div>
-                    )
-                  )}
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <section id="functional-achievements" className="py-16">
+          <section id="functional-achievements">
             <h3 className="text-3xl font-bold font-headline mb-8 text-center flex items-center justify-center gap-3">
                 <Briefcase className="h-8 w-8 text-primary" />
                 Logros por Área Funcional
@@ -235,6 +178,63 @@ export default function Home() {
                 </TabsContent>
             </Tabs>
         </section>
+        
+          <div>
+            <Card className="max-w-4xl mx-auto">
+              <CardHeader>
+                <CardTitle className="font-headline text-3xl flex items-center justify-center gap-3">
+                  <Briefcase className="h-8 w-8 text-primary" />
+                  Experiencia Laboral
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="max-w-2xl mx-auto mb-8 text-muted-foreground">
+                  Un recorrido detallado por mi trayectoria, donde podrás explorar los roles, responsabilidades y logros en cada una de mis experiencias profesionales.
+                </p>
+                <Button asChild size="lg">
+                  <Link href="/experience">Ver mi trayectoria completa</Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div>
+            <h3 className="text-3xl font-bold font-headline mb-8 text-center flex items-center justify-center gap-3">
+              <Sparkles className="h-8 w-8 text-primary" />
+              Habilidades
+            </h3>
+            <Card>
+              <CardContent className="p-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  {Object.entries(resumeData.skills).map(
+                    ([category, skillsList]) => (
+                      <div key={category}>
+                        <h4 className="font-headline text-lg mb-4 flex items-center gap-2 font-medium">
+                          {category === 'Tecnología y Programación' && (
+                            <Code className="h-5 w-5 text-accent" />
+                          )}
+                          {category === 'Liderazgo y Gestión Comercial' && (
+                            <Briefcase className="h-5 w-5 text-accent" />
+                          )}
+                          {category === 'Análisis y Estrategia de Negocios' && (
+                            <TrendingUp className="h-5 w-5 text-accent" />
+                          )}
+                          {category}
+                        </h4>
+                        <div className="flex flex-wrap gap-2">
+                          {skillsList.map((skill) => (
+                            <Badge key={skill} variant="outline">
+                              {skill}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                    )
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
 
           <div>
             <h3 className="text-3xl font-bold font-headline mb-8 text-center flex items-center justify-center gap-3">

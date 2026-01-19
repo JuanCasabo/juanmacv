@@ -1,3 +1,4 @@
+
 'use client';
 
 import Image from 'next/image';
@@ -48,12 +49,12 @@ export default function Home() {
 
       <main className="flex-grow container mx-auto px-4 py-8">
         <section id="hero" className="text-center py-16">
-          <div className="w-60 h-60 rounded-full mx-auto mb-6 overflow-hidden border-4 border-primary/20 shadow-lg">
+          <div className="w-72 h-72 rounded-full mx-auto mb-6 overflow-hidden border-4 border-primary/20 shadow-lg">
             <Image
               src={profileImage?.imageUrl || '/20251015_135606.jpg'}
               alt={resumeData.name}
-              width={240}
-              height={240}
+              width={288}
+              height={288}
               className="object-cover h-full w-full scale-150"
               data-ai-hint={profileImage?.imageHint}
               priority

@@ -51,11 +51,11 @@ export default function Home() {
         <section id="hero" className="text-center py-16">
           <div className="w-72 h-72 rounded-full mx-auto mb-6 overflow-hidden border-4 border-primary/20 shadow-lg">
             <Image
-              src={profileImage?.imageUrl || '/20251015_135606.jpg'}
+              src={profileImage?.imageUrl || '/Foto%20CV%20Juan.png'}
               alt={resumeData.name}
               width={288}
               height={288}
-              className="object-cover h-full w-full scale-150"
+              className="object-cover h-full w-full scale-125"
               data-ai-hint={profileImage?.imageHint}
               priority
             />

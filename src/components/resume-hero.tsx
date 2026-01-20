@@ -16,11 +16,11 @@ export function ResumeHero({ resumeData, profileImage }: ResumeHeroProps) {
         className="w-32 h-32 md:w-40 md:h-40 rounded-full shrink-0 overflow-hidden border-4 border-primary/20 shadow-lg print:w-32 print:h-32"
       >
         <Image
-          src={profileImage?.imageUrl || '/Foto%20CV%20Juan.png'}
+          src={profileImage?.imageUrl || '/Foto%20CV%20Juan%20encuadre.png'}
           alt={resumeData.name}
           width={160}
           height={160}
-          className="object-cover object-[center_0%] h-full w-full scale-125"
+          className="object-cover h-full w-full"
           data-ai-hint={profileImage?.imageHint}
           priority
         />

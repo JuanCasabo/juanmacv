@@ -53,15 +53,11 @@ export default function Home() {
             style={{ width: `288px`, height: `288px` }}
           >
             <Image
-              src={profileImage?.imageUrl || '/Foto%20CV%20Juan.png'}
+              src={profileImage?.imageUrl || '/Foto%20CV%20Juan%20encuadre.png'}
               alt={resumeData.name}
               width={288}
               height={288}
               className="object-cover h-full w-full"
-              style={{
-                objectPosition: `50% 0%`,
-                transform: `scale(1.25)`,
-              }}
               data-ai-hint={profileImage?.imageHint}
               priority
             />

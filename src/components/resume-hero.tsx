@@ -55,6 +55,7 @@ export function ResumeHero({ resumeData, profileImage }: ResumeHeroProps) {
               <a href={resumeData.contact.website} target="_blank" rel="noopener noreferrer" className="hover:underline">
                 {resumeData.contact.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}
               </a>
+              <span className="text-xs text-muted-foreground/80 hidden sm:inline">(ver perfil completo)</span>
             </div>
           )}
         </div>

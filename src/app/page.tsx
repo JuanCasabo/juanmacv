@@ -48,25 +48,23 @@ export default function Home() {
 
       <main className="flex-grow container mx-auto px-4 py-8">
         <section id="hero" className="text-center py-16">
-          <div className="mb-6 flex justify-center">
-            <div
-              className="rounded-full overflow-hidden border-4 border-primary/20 shadow-lg"
-              style={{ width: `288px`, height: `288px` }}
-            >
-              <Image
-                src={profileImage?.imageUrl || '/Foto%20CV%20Juan.png'}
-                alt={resumeData.name}
-                width={288}
-                height={288}
-                className="object-cover h-full w-full"
-                style={{
-                  objectPosition: `50% 80%`,
-                  transform: `scale(1.25)`,
-                }}
-                data-ai-hint={profileImage?.imageHint}
-                priority
-              />
-            </div>
+          <div
+            className="rounded-full overflow-hidden border-4 border-primary/20 shadow-lg"
+            style={{ width: `288px`, height: `288px` }}
+          >
+            <Image
+              src={profileImage?.imageUrl || '/Foto%20CV%20Juan.png'}
+              alt={resumeData.name}
+              width={288}
+              height={288}
+              className="object-cover h-full w-full"
+              style={{
+                objectPosition: `50% 0%`,
+                transform: `scale(1.25)`,
+              }}
+              data-ai-hint={profileImage?.imageHint}
+              priority
+            />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold font-headline text-foreground">
             {resumeData.name}

@@ -35,6 +35,7 @@ import { resumeData } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
 import { CurrentYear } from '@/components/current-year';
+import { ImagePositioner } from '@/components/image-positioner';
 
 export default function Home() {
   const profileImage = PlaceHolderImages.find(
@@ -49,15 +50,14 @@ export default function Home() {
 
       <main className="flex-grow container mx-auto px-4 py-8">
         <section id="hero" className="text-center py-16">
-          <div className="w-72 h-72 rounded-full mx-auto mb-6 overflow-hidden border-4 border-primary/20 shadow-lg">
-            <Image
-              src={profileImage?.imageUrl || '/Foto%20CV%20Juan.png'}
-              alt={resumeData.name}
+          <div className="mb-6 flex justify-center">
+            <ImagePositioner
+              profileImage={profileImage}
+              resumeName={resumeData.name}
               width={288}
               height={288}
-              className="object-cover object-[center_50%] h-full w-full scale-125"
-              data-ai-hint={profileImage?.imageHint}
-              priority
+              initialY={70}
+              scale={1.25}
             />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold font-headline text-foreground">

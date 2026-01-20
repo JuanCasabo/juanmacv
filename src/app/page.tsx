@@ -49,7 +49,7 @@ export default function Home() {
       <main className="flex-grow container mx-auto px-4 py-8">
         <section id="hero" className="text-center py-16">
           <div
-            className="rounded-full overflow-hidden border-4 border-primary/20 shadow-lg"
+            className="mx-auto rounded-full overflow-hidden border-4 border-primary/20 shadow-lg"
             style={{ width: `288px`, height: `288px` }}
           >
             <Image
@@ -62,7 +62,7 @@ export default function Home() {
               priority
             />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold font-headline text-foreground">
+          <h2 className="text-4xl md:text-5xl font-bold font-headline text-foreground mt-4">
             {resumeData.name}
           </h2>
           <p className="text-xl md:text-2xl text-primary mt-2 font-headline">

@@ -1,3 +1,4 @@
+
 export const resumeData = {
   name: 'Juan M. Correa',
   title: 'Analista de Negocios & Desarrollador Tecnológico',
@@ -6,7 +7,7 @@ export const resumeData = {
     email: 'juanmacorrea1602@gmail.com',
     phone: '+5492236358121',
     linkedin: 'www.linkedin.com/in/juan-manuel-correa-casabo-a17a0a212/',
-    website: 'https://my-web-app--studio-6242538968-2753a.us-central1.hosted.app/',
+    website: 'http://bit.ly/49Ko16X',
   },
   summary:
     'Profesional con un perfil híbrido que integra una sólida experiencia en administración, estrategia comercial y desarrollo tecnológico. Experto en transformar ideas de negocio en productos digitales funcionales, optimizar procesos y liderar equipos multifuncionales. Mi trayectoria se caracteriza por el análisis de datos con herramientas como Power BI, la gestión de P&L, la optimización con sistemas ERP como SAP y la creación de soluciones que alinean la visión comercial con la eficiencia operativa. Actualmente, consolido mi perfil técnico como programador para construir tecnología innovadora.',

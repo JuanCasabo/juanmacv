@@ -55,6 +55,7 @@ export default function ResumePage() {
                           <p className="text-sm text-muted-foreground font-medium">{job.period}</p>
                           <h3 className="font-headline text-lg font-semibold print:text-base">{job.role}</h3>
                           <p className="text-muted-foreground font-medium">{job.company}</p>
+                          <p className="text-sm text-muted-foreground mt-2 print:text-xs">{job.summary}</p>
                         </div>
                     </div>
                   ))}
@@ -115,3 +116,5 @@ export default function ResumePage() {
     </div>
   );
 }
+
+    

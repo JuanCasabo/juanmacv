@@ -1,6 +1,6 @@
 
 import Image from 'next/image';
-import { Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Globe, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import type { resumeData as ResumeDataType } from '@/lib/data';
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 
@@ -20,7 +20,7 @@ export function ResumeHero({ resumeData, profileImage }: ResumeHeroProps) {
           alt={resumeData.name}
           width={160}
           height={160}
-          className="object-cover object-[center_40%] h-full w-full scale-110"
+          className="object-cover object-[center_40%] h-full w-full"
           data-ai-hint={profileImage?.imageHint}
           priority
         />
@@ -49,8 +49,18 @@ export function ResumeHero({ resumeData, profileImage }: ResumeHeroProps) {
             <Linkedin className="h-4 w-4" />
             <a href={`https://${resumeData.contact.linkedin}`} target="_blank" rel="noopener noreferrer" className="hover:underline">linkedin.com/in/juan-manuel-correa...</a>
           </div>
+           {resumeData.contact.website && (
+            <div className="flex items-center gap-2">
+              <Globe className="h-4 w-4" />
+              <a href={resumeData.contact.website} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                {resumeData.contact.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </section>
   );
 }
+
+    

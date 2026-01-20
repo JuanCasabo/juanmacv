@@ -8,7 +8,7 @@ export const resumeData = {
     linkedin: 'www.linkedin.com/in/juan-manuel-correa-casabo-a17a0a212/',
   },
   summary:
-    'Profesional con un perfil híbrido que integra una sólida experiencia en administración, estrategia comercial y desarrollo tecnológico. Experto en transformar ideas de negocio en productos digitales funcionales, optimizar procesos y liderar equipos multifuncionales. Mi trayectoria se caracteriza por el análisis de datos para la toma de decisiones, la gestión de P&L y la creación de soluciones que alinean la visión comercial con la eficiencia operativa. Actualmente, consolido mi perfil técnico como programador para construir tecnología innovadora.',
+    'Profesional con un perfil híbrido que integra una sólida experiencia en administración, estrategia comercial y desarrollo tecnológico. Experto en transformar ideas de negocio en productos digitales funcionales, optimizar procesos y liderar equipos multifuncionales. Mi trayectoria se caracteriza por el análisis de datos con herramientas como Power BI, la gestión de P&L, la optimización con sistemas ERP como SAP y la creación de soluciones que alinean la visión comercial con la eficiencia operativa. Actualmente, consolido mi perfil técnico como programador para construir tecnología innovadora.',
   experience: [
     {
       company: 'Group Dreaming',
@@ -90,8 +90,9 @@ export const resumeData = {
     'Tecnología y Programación': [
         'Desarrollo con IA Generativa',
         'Arquitectura de Producto Digital (MVP)',
+        'Power BI',
+        'Sistemas de Gestión (SAP, FUDO, Tango, ZEUS)',
         'Análisis de Datos con Excel (Macros)',
-        'Sistemas de Gestión (FUDO, Tango, ZEUS)',
         'Cursando Tec. en Programación (UTN)',
         'Tecnologías Web Modernas',
     ],

@@ -2,7 +2,7 @@
 export const resumeData = {
   name: 'Juan M. Correa',
   title: 'Analista de Negocios & Desarrollador Tecnológico',
-  location: 'Mar del Plata, Argentina (Disponibilidad para reubicarme)',
+  location: 'Caballito - CABA - Argentina',
   contact: {
     email: 'juanmacorrea1602@gmail.com',
     phone: '+5492236358121',
@@ -164,5 +164,3 @@ export const resumeData = {
     availability: 'Disponibilidad para contratación híbrida o como autónomo (freelance).'
   }
 };
-
-    

@@ -2,7 +2,7 @@
 export const resumeData = {
   name: 'Juan M. Correa',
   title: 'Analista de Negocios & Desarrollador Tecnológico',
-  location: 'Caballito - CABA - Argentina',
+  location: 'Mar del Plata, Argentina',
   contact: {
     email: 'juanmacorrea1602@gmail.com',
     phone: '+5492236358121',
@@ -161,6 +161,6 @@ export const resumeData = {
     body2: 'No soy solo un estratega; soy un ejecutor. He liderado equipos multifuncionales, gestionado P&L, negociado acuerdos comerciales de alto impacto y optimizado cadenas de suministro en entornos complejos. Mi enfoque siempre se centra en el análisis de datos para una toma de decisiones informada, garantizando que cada paso esté alineado con los objetivos de rentabilidad y crecimiento de la compañía.',
     body3: 'Lo que me diferencia es mi capacidad para cerrar la brecha entre la estrategia de negocio y la tecnología. Actualmente, estoy consolidando mi perfil técnico como programador, lo que me permite no solo definir el "qué" y el "porqué", sino también construir el "cómo". Un ejemplo tangible es mi último proyecto, una Fintech cuyo prototipo funcional desarrollé íntegramente utilizando IA, demostrando que puedo convertir una visión estratégica en un activo digital con una eficiencia de recursos sin precedentes. Esta habilidad me permite liderar la transformación digital desde adentro, dialogando fluidamente con equipos técnicos y de negocio.',
     conclusion: 'Ofrezco un liderazgo pragmático, orientado a la eficiencia y la innovación. Busco una organización que valore un enfoque integral y que esté lista para dar un salto cualitativo en su gestión, fusionando la solidez empresarial con las oportunidades que brinda la tecnología. Estoy convencido de que mi incorporación representaría un activo clave para impulsar el crecimiento, optimizar la rentabilidad y liderar a su equipo hacia la consecución de nuevos y ambiciosos objetivos.',
-    availability: 'Disponibilidad para contratación híbrida o como autónomo (freelance).'
+    availability: 'Resido en Mar del Plata, con disponibilidad para contratación híbrida o como autónomo (freelance).'
   }
 };

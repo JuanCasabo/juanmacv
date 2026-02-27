@@ -14,7 +14,7 @@ export const resumeData = {
   experience: [
     {
       company: 'Group Dreaming',
-      role: 'Founder & CEO',
+      role: 'Founder & Project Lead',
       period: 'Sep 2025 - Presente',
       summary: 'Lideré el diseño y construcción de un prototipo funcional para una plataforma Fintech, transformando una idea de negocio en un activo digital listo para validación.',
       description:
@@ -22,7 +22,7 @@ export const resumeData = {
     },
     {
       company: 'PACHATA - café & restó',
-      role: 'Director Administrativo/Comercial',
+      role: 'Responsable Administrativo y Comercial',
       period: 'Sep 2023 - May 2025',
       summary: 'Dirigí el negocio desde su concepción, plan de negocio y puesta en marcha, incluyendo la gestión de equipos, marketing y operaciones hasta su venta exitosa.',
       description:
@@ -38,7 +38,7 @@ export const resumeData = {
     },
     {
       company: 'SUPERMERCADOS TOLEDO',
-      role: 'Gerente de Compras (Sector Industria)',
+      role: 'Jefe de Compras (Sector Industria)',
       period: 'Jun 2021 - May 2022',
       summary: 'Gestioné las compras del sector industrial, garantizando el abastecimiento continuo de materia prima y negociando con proveedores estratégicos en un entorno complejo.',
       description:
@@ -54,7 +54,7 @@ export const resumeData = {
     },
     {
         company: 'CREPES confitería restaurante',
-        role: 'Socio Fundador',
+        role: 'Socio y Encargado General',
         period: 'Sep 2016 - Nov 2018',
         summary: 'Fui socio fundador a cargo de la administración general, incluyendo control de stock, gestión de proveedores, finanzas y personal.',
         description: 'Responsabilidades Generales:\nAdministración general del sistema, controles de stock e inventario, gestiones bancarias, habilitaciones, conciliación de facturas y pagos, control de precios, gestión de proveedores y acuerdos comerciales. Vínculo con estudio contable. Reclutamiento, altas/bajas de personal y capacitaciones.',
@@ -164,3 +164,5 @@ export const resumeData = {
     availability: 'Resido en Mar del Plata, con disponibilidad para contratación híbrida o como autónomo (freelance).'
   }
 };
+
+    

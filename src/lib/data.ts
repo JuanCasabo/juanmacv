@@ -1,7 +1,7 @@
 
 export const resumeData = {
   name: 'Juan M. Correa',
-  title: 'Analista de Negocios & Desarrollador Tecnológico',
+  title: 'Profesional de Negocios | Gestión Administrativa y Comercial',
   location: 'Mar del Plata, Argentina',
   contact: {
     email: 'juanmacorrea1602@gmail.com',
@@ -10,23 +10,15 @@ export const resumeData = {
     website: 'http://bit.ly/49Ko16X',
   },
   summary:
-    'Profesional con un perfil híbrido que integra una sólida experiencia en administración, estrategia comercial y desarrollo tecnológico. Experto en transformar ideas de negocio en productos digitales funcionales, optimizar procesos y liderar equipos multifuncionales. Mi trayectoria se caracteriza por el análisis de datos con herramientas como Power BI, la gestión de P&L, la optimización con sistemas ERP como SAP y la creación de soluciones que alinean la visión comercial con la eficiencia operativa. Actualmente, consolido mi perfil técnico como programador para construir tecnología innovadora.',
+    'Profesional con un perfil que integra una sólida experiencia en administración, estrategia comercial y operaciones. Experto en optimizar procesos, analizar datos y liderar equipos multifuncionales para transformar ideas de negocio en resultados concretos. Mi trayectoria se caracteriza por la gestión de P&L y la optimización con sistemas ERP, siempre alineando la visión comercial con la eficiencia operativa.',
   experience: [
-    {
-      company: 'Group Dreaming',
-      role: 'Founder & Project Lead',
-      period: 'Sep 2025 - Presente',
-      summary: 'Lideré el diseño y construcción de un prototipo funcional para una plataforma Fintech, transformando una idea de negocio en un activo digital listo para validación.',
-      description:
-        'Arquitectura de Producto & MVP: Liderazgo integral en el diseño y construcción de un prototipo de alta fidelidad para una plataforma Fintech de ahorro colaborativo. Transformación de una idea de negocio en un activo digital funcional listo para validación de mercado.\n\nEjecución impulsada por IA: Desarrollo del 100% del código y estructura lógica utilizando exclusivamente Inteligencia Artificial Generativa, demostrando la viabilidad de crear productos tecnológicos complejos con máxima eficiencia de recursos.\n\nModelado de Negocio: Definición de la lógica financiera, flujos de usuario (UX) y esquemas de compliance legal necesarios para la futura operatividad del sistema de "ahorro solidario".\n\nEstrategia Pre-Lanzamiento: Preparación del producto para rondas de inversión (Pre-Seed) o lanzamiento al mercado, estableciendo la escalabilidad técnica y la hoja de ruta comercial.',
-    },
     {
       company: 'PACHATA - café & restó',
       role: 'Responsable Administrativo y Comercial',
       period: 'Sep 2023 - May 2025',
       summary: 'Dirigí el negocio desde su concepción, plan de negocio y puesta en marcha, incluyendo la gestión de equipos, marketing y operaciones hasta su venta exitosa.',
       description:
-        'Responsabilidades Generales:\nAnálisis de mercado y posicionamiento de productos. Búsqueda de nuevos proveedores. Negociación de acuerdos comerciales. Desarrollo de nuevos canales de venta. Supervisión de compras. Liderazgo y desarrollo de equipos de trabajo. Capacitaciones. Elaboración de procesos y procedimientos. Implementación de estrategias de marketing.\n\nAnálisis Detallado del Proyecto:\nEl Origen del Proyecto: "Pachata" nació de una necesidad personal y familiar de encontrar un espacio en Mar del Plata donde los padres pudieran disfrutar de un momento de ocio mientras sus hijos pequeños juegan en un entorno seguro.\n\nDesarrollo y Planificación: El proyecto se fundamentó en un sólido plan de negocios, un estudio de mercado exhaustivo y un detallado P&L. Se tomó la decisión estratégica de financiar el proyecto mediante apalancamiento con créditos bancarios.\n\nGestión y Puesta en Marcha: Como Director, mi rol fue integral, capacitando y dirigiendo todas las áreas clave del negocio. El espacio de juegos fue diseñado en colaboración con una psicóloga, priorizando la seguridad y el desarrollo didáctico.\n\nFinalización del Ciclo: El proyecto demostró ser viable, pero la alta demanda operativa requería un equipo de gestión más amplio. Se tomó la decisión de vender el negocio en mayo de 2025 para capitalizar el valor generado y reorientar mi carrera profesional hacia la programación.',
+        'Responsabilidades Generales:\nAnálisis de mercado y posicionamiento de productos. Búsqueda de nuevos proveedores. Negociación de acuerdos comerciales. Desarrollo de nuevos canales de venta. Supervisión de compras. Liderazgo y desarrollo de equipos de trabajo. Capacitaciones. Elaboración de procesos y procedimientos. Implementación de estrategias de marketing.\n\nAnálisis Detallado del Proyecto:\nEl Origen del Proyecto: "Pachata" nació de una necesidad personal y familiar de encontrar un espacio en Mar del Plata donde los padres pudieran disfrutar de un momento de ocio mientras sus hijos pequeños juegan en un entorno seguro.\n\nDesarrollo y Planificación: El proyecto se fundamentó en un sólido plan de negocios, un estudio de mercado exhaustivo y un detallado P&L. Se tomó la decisión estratégica de financiar el proyecto mediante apalancamiento con créditos bancarios.\n\nGestión y Puesta en Marcha: Como Director, mi rol fue integral, capacitando y dirigiendo todas las áreas clave del negocio. El espacio de juegos fue diseñado en colaboración con una psicóloga, priorizando la seguridad y el desarrollo didáctico.\n\nFinalización del Ciclo: El proyecto demostró ser viable, pero la alta demanda operativa requería un equipo de gestión más amplio. Se tomó la decisión de vender el negocio en mayo de 2025 para capitalizar el valor generado.',
     },
     {
       company: 'CASA MODA - KUSA S.A.',
@@ -98,14 +90,10 @@ export const resumeData = {
         'Venta Consultiva B2B',
         'Marketing y Posicionamiento',
     ],
-    'Tecnología y Programación': [
-        'Desarrollo con IA Generativa',
-        'Arquitectura de Producto Digital (MVP)',
+    'Herramientas y Sistemas de Gestión': [
         'Power BI',
         'Sistemas de Gestión (SAP, FUDO, Tango, ZEUS)',
         'Análisis de Datos con Excel (Macros)',
-        'Cursando Tec. en Programación (UTN)',
-        'Tecnologías Web Modernas',
     ],
   },
   functionalAchievements: {
@@ -117,7 +105,6 @@ export const resumeData = {
             'Liderazgo y motivación de equipos de ventas, implementando estrategias para superar objetivos y récords.',
             'Creación de nuevos canales de venta, estrategias de marketing y posicionamiento de productos.',
             'Negociación de acuerdos comerciales clave y gestión de relaciones con clientes B2B y proveedores estratégicos.',
-            'Definición de la estrategia de producto, desde la concepción del MVP hasta la hoja de ruta para lanzamiento y rondas de inversión.',
         ]
     },
     administrative: {
@@ -132,21 +119,21 @@ export const resumeData = {
         ]
     },
     operational: {
-        title: 'Operaciones y Desarrollo Tecnológico',
+        title: 'Gestión Operativa y Logística',
         icon: 'Cog',
         achievements: [
-            'Transformación de ideas de negocio en prototipos de alta fidelidad y productos digitales funcionales.',
-            'Desarrollo y arquitectura de soluciones tecnológicas utilizando IA Generativa para máxima eficiencia de recursos.',
             'Puesta en marcha y gestión integral de operaciones, incluyendo logística, flota y cadena de suministro.',
             'Supervisión de la cadena de suministro, garantizando el abastecimiento continuo en entornos de alta demanda.',
             'Liderazgo de proyectos complejos bajo presión, como la adjudicación y puesta en marcha del servicio de emergencias 107.',
+            'Diseño e implementación de procesos logísticos para mejorar la eficiencia y el control de stock.',
+            'Coordinación de servicios generales, análisis de rentabilidad de unidades de negocio y propuestas de mejora.',
         ]
     }
   },
   education: [
     {
       institution: 'Universidad Tecnológica Nacional',
-      degree: 'Tec. en Programación (Cursando)',
+      degree: 'Tec. en Programación (Pausada)',
       period: '2023 - Presente',
     },
     {
@@ -156,13 +143,15 @@ export const resumeData = {
     },
   ],
   coverLetter: {
-    intro: 'Me dirijo a ustedes con gran interés en explorar oportunidades como Analista de Negocios o Responsable de áreas específicas, donde pueda aplicar mi perfil híbrido que combina una profunda comprensión del negocio con una creciente especialización en desarrollo tecnológico.',
+    intro: 'Me dirijo a ustedes con gran interés en explorar oportunidades como Analista de Negocios o Responsable de áreas específicas, donde pueda aplicar mi perfil que combina una sólida comprensión del negocio con una probada capacidad de gestión.',
     body1: 'Mi carrera se ha forjado sobre la base de una visión 360° de las organizaciones. Desde la fundación y dirección de mis propios emprendimientos hasta la reestructuración de áreas clave en empresas consolidadas, he demostrado una capacidad consistente para transformar desafíos en resultados medibles. Mi especialidad es analizar el entorno, identificar oportunidades de mejora y diseñar e implementar las estrategias y procesos necesarios para capitalizarlas.',
     body2: 'No soy solo un estratega; soy un ejecutor. He liderado equipos multifuncionales, gestionado P&L, negociado acuerdos comerciales de alto impacto y optimizado cadenas de suministro en entornos complejos. Mi enfoque siempre se centra en el análisis de datos para una toma de decisiones informada, garantizando que cada paso esté alineado con los objetivos de rentabilidad y crecimiento de la compañía.',
-    body3: 'Lo que me diferencia es mi capacidad para cerrar la brecha entre la estrategia de negocio y la tecnología. Actualmente, estoy consolidando mi perfil técnico como programador, lo que me permite no solo definir el "qué" y el "porqué", sino también construir el "cómo". Un ejemplo tangible es mi último proyecto, una Fintech cuyo prototipo funcional desarrollé íntegramente utilizando IA, demostrando que puedo convertir una visión estratégica en un activo digital con una eficiencia de recursos sin precedentes. Esta habilidad me permite liderar la transformación digital desde adentro, dialogando fluidamente con equipos técnicos y de negocio.',
+    body3: 'Mi principal fortaleza es la versatilidad. Tengo la capacidad de moverme con fluidez entre las áreas comercial, administrativa y operativa, entendiendo cómo cada una impacta en el resultado final. Esta visión integral me permite no solo identificar problemas, sino también diseñar e implementar soluciones prácticas y eficientes que conectan los distintos departamentos de la empresa.',
     conclusion: 'Aporto un enfoque pragmático, orientado a resultados, y busco una organización que valore una perspectiva integral para optimizar su gestión. Estoy convencido de que mi incorporación como analista o responsable de área sería un activo valioso para mejorar la rentabilidad, impulsar el crecimiento y colaborar activamente con el equipo para alcanzar nuevos y ambiciosos objetivos.',
     availability: 'Resido en Mar del Plata, con disponibilidad para contratación híbrida o como autónomo (freelance).'
   }
 };
+
+    
 
     
